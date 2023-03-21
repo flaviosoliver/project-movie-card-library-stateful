@@ -1,5 +1,6 @@
 {
   "name": "sd-0x-project-movie-card-library-stateful",
+  "homepage": "http://flaviosoliver.github.io/project-movie-card-library-stateful",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,6 +14,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --verbose=true",
     "eject": "react-scripts eject"
@@ -39,6 +42,7 @@
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "eslint": "^6.6.0",
-    "eslint-config-airbnb": "^18.0.1"
+    "eslint-config-airbnb": "^18.0.1",
+    "gh-pages": "^5.0.0"
   }
 }
